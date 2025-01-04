@@ -18,7 +18,11 @@ module.exports = {
   overrides: [
     {
       files: [ '*test*' ],
-      rules: { '@typescript-eslint/unbound-method': 'off' }
+      rules: {
+        'react-refresh/only-export-components': 'warn',
+        'require-jsdoc': 'off', 
+        'max-len': 'off',      
+      },
     },
   ],
 }
